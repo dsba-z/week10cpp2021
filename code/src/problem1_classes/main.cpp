@@ -2,6 +2,7 @@
 #include <cmath>
 
 #include "polarcoordinate.h"
+#include "../polynomial.h"
 
 const double EPS = 1e-6;
 
@@ -101,14 +102,14 @@ bool testMultAs(PolarCoordinate& a, const double& value)
 {
     PolarCoordinate c = a * value;
     a *= value;
-    return checkFields(a, c.getRadius() * value, c.getAngle());
+    return checkFields(a, c.getRadius(), c.getAngle());
 }
 
 bool testDivAs(PolarCoordinate& a, const double& value)
 {
     PolarCoordinate c = a / value;
     a /= value;
-    return checkFields(a, c.getRadius() / value, c.getAngle());
+    return checkFields(a, c.getRadius(), c.getAngle());
 }
 
 
@@ -138,7 +139,7 @@ bool testPartD()
         std::cerr << "Error in division with assignment\n";
         return false;
     }
-    return true
+    return true;
 }
 
 
@@ -151,8 +152,30 @@ bool testEverything()
     return constructors && partC && partD;
 }
 
+
+bool test1(Polynomial a)
+{
+    return true;
+}
+
 int main()
 {
+    
+    Polynomial a({1, 2});
+    
+    
+//    PolarCoordinate a(0, 0);
+    
+    
+    double x = 5;
+    double y = 6;
+    PolarCoordinate answer = PolarCoordinate::cartesianToPolar(x, y);
+    
+    std::vector<double> b;
+    bool qwe = test1(b);
+    
+    
+//    (answer += a) += a;
     bool success = testEverything();
     if (success)
     {

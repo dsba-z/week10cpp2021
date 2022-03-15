@@ -16,5 +16,6 @@ set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
 add_executable(problem1_classes   
     problem1_classes/main.cpp
     problem1_classes/polarcoordinate.cpp
-    problem1_classes/polarcoordinate.h)
+    problem1_classes/polarcoordinate.h
+    polynomial.h polynomial.cpp)
 #add_executable(problem2_static  problem2_static/main.cpp)

@@ -15,7 +15,10 @@ public:
     double getRadius() const {return radius;}
     double getAngle() const {return angle;}
     
+    static PolarCoordinate cartesianToPolar(double x, double y);
+    
     void test();
+    
     
     PolarCoordinate operator+(const PolarCoordinate& b) const;
     PolarCoordinate operator-(const PolarCoordinate& b) const;
