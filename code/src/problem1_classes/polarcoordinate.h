@@ -16,6 +16,8 @@ public:
     double getAngle() const {return angle;}
     
     void test();
+
+    static PolarCoordinate cartesianToPolar(double x, double y);
     
     PolarCoordinate operator+(const PolarCoordinate& b) const;
     PolarCoordinate operator-(const PolarCoordinate& b) const;

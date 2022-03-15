@@ -138,7 +138,7 @@ bool testPartD()
         std::cerr << "Error in division with assignment\n";
         return false;
     }
-    return true
+    return true;
 }
 
 
@@ -153,6 +153,15 @@ bool testEverything()
 
 int main()
 {
+//    PolarCoordinate a(0, 0);
+    
+    double x = 5;
+    double y = 6;
+    
+    PolarCoordinate result = PolarCoordinate::cartesianToPolar(x, y);
+    
+    
+    
     bool success = testEverything();
     if (success)
     {
