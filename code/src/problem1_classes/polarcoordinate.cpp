@@ -59,7 +59,7 @@ PolarCoordinate PolarCoordinate::operator+(const PolarCoordinate& b) const
     double resultX = x + bx;
     double resultY = y + by;
     
-    
+    PolarCoordinate newObject(radius, angle); // make new variable like this
     PolarCoordinate result = cartesianToPolar(resultX, resultY);
     
     return result;

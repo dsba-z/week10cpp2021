@@ -101,14 +101,14 @@ bool testMultAs(PolarCoordinate& a, const double& value)
 {
     PolarCoordinate c = a * value;
     a *= value;
-    return checkFields(a, c.getRadius() * value, c.getAngle());
+    return checkFields(a, c.getRadius(), c.getAngle());
 }
 
 bool testDivAs(PolarCoordinate& a, const double& value)
 {
     PolarCoordinate c = a / value;
     a /= value;
-    return checkFields(a, c.getRadius() / value, c.getAngle());
+    return checkFields(a, c.getRadius(), c.getAngle());
 }
 
 

@@ -19,6 +19,9 @@ public:
 
     static PolarCoordinate cartesianToPolar(double x, double y);
     
+    
+//    PolarCoordinate& PolarCoordinate::operator +=(const T2& b);
+    
     PolarCoordinate operator+(const PolarCoordinate& b) const;
     PolarCoordinate operator-(const PolarCoordinate& b) const;
     PolarCoordinate& operator+=(const PolarCoordinate& b);
