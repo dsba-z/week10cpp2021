@@ -8,10 +8,14 @@ class PolarCoordinate
     double angle;
 
 public:
+    PolarCoordinate();
     PolarCoordinate(double radius, double angle);
+    PolarCoordinate(double radius);
     
     double getRadius() const {return radius;}
     double getAngle() const {return angle;}
+    
+    void test();
     
     PolarCoordinate operator+(const PolarCoordinate& b) const;
     PolarCoordinate operator-(const PolarCoordinate& b) const;
