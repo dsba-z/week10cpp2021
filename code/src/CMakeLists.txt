@@ -19,4 +19,5 @@ add_executable(problem1_classes
     problem1_classes/polarcoordinate.h)
 add_executable(problem2_static  problem2_static/main.cpp 
     problem2_static/smartheater.h problem2_static/smartheater.cpp)
-add_executable(problem3_list problem3_list/main.cpp)
+add_executable(problem3_list problem3_list/main.cpp
+    problem3_list/list.h problem3_list/list.cpp)
