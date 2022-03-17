@@ -18,4 +18,5 @@ add_executable(problem1_classes
     problem1_classes/polarcoordinate.cpp
     problem1_classes/polarcoordinate.h
     polynomial.h polynomial.cpp)
-#add_executable(problem2_static  problem2_static/main.cpp)
+add_executable(problem2_static  problem2_static/main.cpp
+    problem2_static/smartheater.h problem2_static/smartheater.cpp)
