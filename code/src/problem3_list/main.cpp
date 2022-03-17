@@ -14,7 +14,12 @@ int main()
         List({1,4,5,5,5,6,6,6,6,5,6,6,6,5,6,6,6,5});
         
     }  catch (const std::range_error& e) {
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
+        std::cout << e.what()<< e.what() << std::endl;
+    }  catch (const std::exception& e) {
+        std::cerr << e.what() << std::endl;
+    }  catch (...) {
+        std::cerr << "some error" << std::endl;
     }
     return 0;
 }
