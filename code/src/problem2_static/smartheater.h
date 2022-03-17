@@ -4,11 +4,15 @@
 
 class SmartHeater
 {
+
+public:
     static double externalTemp;
     double idealTemp = 23.0;
     double increaseFactor;
-public:
     SmartHeater();
+    SmartHeater(double ideal) : idealTemp(ideal){};
+    
+    
 };
 
 #endif // SMARTHEATER_H
