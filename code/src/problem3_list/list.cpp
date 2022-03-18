@@ -14,3 +14,10 @@ List::List(const std::vector<int>& v)
         throw std::length_error("Vector has too many elements");
     }
 }
+
+
+void List::add(int x)
+{
+    int numberOfElements = n;
+    
+}
