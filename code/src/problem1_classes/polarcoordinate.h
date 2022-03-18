@@ -28,9 +28,9 @@ public:
 };
 
 
-std::ostream& operator<< (std::ostream& out, const Polynomial& a)
-{
+//std::ostream& operator<< (std::ostream& out, const Polynomial& a)
+//{
     
-}
+//}
 
 #endif // POLARCOORDINATE_H
